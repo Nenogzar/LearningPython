@@ -6,7 +6,7 @@ even_sum = 0
 odd_sum = 0
 for number in range(num, end + 1):
     # ternary operator
-    res = "evan" if number%2==0 else "odd"
+    res = "evan" if number % 2==0 else "odd"
     if res == "evan":
         even_sum += number
     else:
