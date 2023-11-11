@@ -9,9 +9,18 @@
 # Filter all the numbers that fit in the category (0 counts as a positive and even).
 # Finally, print the result.
 
-numbers = [int(input()) for _ in range(int(input()))]
-command = input()
+numbers = [int(input(f"-{i+1}- ")) for i in range(int(input("range: ")))]
+command = input("odd / even / positive / negative :")
+
 print([x for x in numbers if any([command == "odd" and x % 2 != 0,
                                   command == "even" and x % 2 ==0,
                                   command == "positive" and x >= 0,
                                   command == "negative" and x < 0])])
+
+
+result = [x for x in numbers if any([command == "odd" and x % 2 != 0,
+                                     command == "even" and x % 2 == 0,
+                                     command == "positive" and x >= 0,
+                                     command == "negative" and x < 0])]
+
+print(f" {command} in list {numbers} is {result}")
