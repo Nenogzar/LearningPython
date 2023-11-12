@@ -1,5 +1,5 @@
 while True:
-    input_string = input("Въведете числа, разделени със запетайка: ")
+    input_string = input("Въведете числа, разделени със запетая: ")
     input_numbers = input_string.split(',')
 
 
