@@ -1,5 +1,5 @@
 # LearningPython
 
 # softuni_bp
-# SoftUni Basic
-# SoftUni fundamentals
+ SoftUni Basic
+SoftUni fundamentals
