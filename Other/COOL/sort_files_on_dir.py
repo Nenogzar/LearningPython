@@ -1,9 +1,18 @@
+##########################################*-*FROM*TAMER*-*##########################################
+# Ако текущият файл има директория, пропуск (continue).
+# Извлича се разширението на файла.
+# Ако разширението не се съдържа в списъка с разширения , пропуска се итерацията .extensions
+# Създава се път към директорията за съответното разширение.
+# Ако тази директория не съществува, се създава.
+# Файлът се премества в новосъздадената директория.
+
+##########################################*-*FROM*TAMER*-*##########################################
+
 # import os
 # import shutil
 #
-#
 # def main():
-#     # Дефинирайте функционалността на главната програма тук
+#
 #     pass
 #
 #
@@ -21,14 +30,15 @@
 #
 #         file_extension = file.split(".")[-1]
 #
-#         # Папка за файловете с дадено разширение
+#
 #         directory_path = os.path.join(base_path, file_extension)
 #         if not os.path.exists(directory_path):
 #             os.mkdir(directory_path)
 #
-#         # Проверка дали дестинационната директория не е същата като текущата
+#
 #         if not os.path.samefile(current_file_path, directory_path):
 #             shutil.move(src=current_file_path, dst=os.path.join(directory_path, file))
+
 
 
 import os
@@ -57,12 +67,12 @@ def process_downloads(base_path):
 
         file_extension = file.split(".")[-1]
 
-        # Папка за файловете с дадено разширение
+        # Folders whit files extension
         directory_path = os.path.join(base_path, file_extension)
         if not os.path.exists(directory_path):
             os.mkdir(directory_path)
 
-        # Проверка дали дестинационната директория не е същата като текущата
+        # chek for curent folder is not a same
         if not os.path.samefile(current_file_path, directory_path):
             shutil.move(src=current_file_path, dst=os.path.join(directory_path, file))
 
@@ -72,7 +82,7 @@ if __name__ == "__main__":
 
     users_path = 'C:\\Users\\'
 
-    # Обход на всички потребители
+    # Users on activdir
     for user_name in os.listdir(users_path):
         user_path = os.path.join(users_path, user_name)
         if os.path.isdir(user_path):
