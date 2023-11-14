@@ -1,6 +1,6 @@
 ###############################################Hello################################################
 
-original_string = " - NEXT LEVEL   FROM CEO - "
+original_string = " - FROM CEO - "
 width = 100
 fillchar = "#"
 

@@ -12,3 +12,7 @@ time_strings = [f"{h}:{m}" for h in range(24) for m in range(60)]
                                         # ...
                                         # 23:58
                                         # 23:59
+
+
+
+F:\Python\Project\LearningPython\Other\COOL\code_snippets
