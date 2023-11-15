@@ -11,7 +11,6 @@ matrix = []
 for run in range(3):
     list_app = list(map(int, input().split()))
     matrix.append(list_app)
-
 first_player = False
 second_player = False
 
