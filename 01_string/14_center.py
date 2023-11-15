@@ -1,6 +1,6 @@
 ###############################################Hello################################################
 
-original_string = " - Counts_files_on_DIR - "
+original_string = " - AI - "
 width = 100
 fillchar = "#"
 
