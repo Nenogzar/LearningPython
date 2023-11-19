@@ -18,6 +18,6 @@ name2 = input()
 print("Hello, my love!" if name2 == 'Johnny' else f"Hello, {name2}!")
 
 
-
+""" 4 """
 name3 = input()
 print(f"Hello, {name3}!" if name3 != 'Johnny' else "Hello, my love!")
