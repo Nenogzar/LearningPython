@@ -29,18 +29,16 @@ for drinks, age in age_info.items():
 
 """ 3 """
 
-# kids = "toddy"
-# teen = "coke"
-# young = "beer"
-# adults = "whisky"
-#
+# drink = ""
 # age = int(input())
 # if age <= 14:
-#     drink = kids
+#     drink = "toddy"
 # elif age <= 18:
-#     drink = teen
+#     drink = "coke"
 # elif age <= 21:
-#     drink = young
-# elif age > 21:
-#     drink = adults
+#     drink = "beer"
+# else:
+#     drink = "whisky"
 # print('drink', drink)
+
+
