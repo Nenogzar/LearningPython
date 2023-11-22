@@ -19,8 +19,9 @@
 # print("Лицето на четириъгълника е:", abs(formula))
 
 """ calculation of a quadrilateral in a coordinate system - with a check for correctly arranged coordinate points """
+
 import math
-ab, bc, cd, da, ac, bd, = 0, 0, 0, 0, 0, 0,
+ab, bc, cd, da, ac, bd, slope_ab, slope_bc, slope_cd, slope_da = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 figure = ''
 coordinate_a = list(map(int, input("Enters two integers with a space between them: ").split()))
 coordinate_b = list(map(int, input("Enters two integers with a space between them: ").split()))
@@ -40,8 +41,8 @@ for coordinate in coordinates[1:]:
         larg = coordinate
 
 
-print("the smallest coordinate", small)
-print("the largest coordinate", larg)
+print(f"{small =}")
+print(f"{larg = }")
 
 new_coordinates = coordinates.copy()
 new_coordinates.remove(small)
@@ -74,39 +75,68 @@ ac = ((new_coordinates[0][0] - new_coordinates[2][0])**2 + (new_coordinates[0][1
 bd = ((new_coordinates[1][0] - new_coordinates[3][0])**2 + (new_coordinates[1][1] - new_coordinates[3][1])**2)**0.5
 
 
-# Отпечатайте дължините на отсечките
-print(f"AB = {ab:.2f}")
-print(f"BC = {bc:.2f}")
-print(f"CD = {cd:.2f}")
-print(f"DA = {da:.2f}")
-print(f"Диагонала AC = {da:.2f}")
-print(f"Диагонала BD  = {da:.2f}")
+print(f"{ab = :.2f}")
+print(f"{bc = :.2f}")
+print(f"{cd = :.2f}")
+print(f"{da = :.2f}")
+print(f"{ac = :.2f}")
+print(f"{bd = :.2f}")
 
-formula_by_type = 0
 
+
+formula_perimeter = 0
+formula_lice = 0
+# square and rhombus
 if ab == bc == cd == da:
+    formula_perimeter = ab * 4
     if ac == bd:
         figure = "square"
-        formula_by_type = ab ** 2
+        formula_lice = ab ** 2
     else:
         figure = "rhombus"
-        formula_by_type = (ac * bd) /2
+        formula_lice = ab * ac
 
-if ab == cd and bc == da:
-    formula_by_type = 2 * ab + 2 * bc
+# rectangle and parallelogram
+elif ab == cd and bc == da:
+    formula_perimeter = 2 * ab + 2 * bc
     if ac == bd:
+        formula_lice = ab * bc
         figure = "rectangle"
     else:
         figure = "parallelogram"
-        formula_by_type = 2 * ab + 2 * bc
+        formula_lice = ab * ac
+
+elif ac == bd:
+    # isosceles trapezoid
+    # slope of a segment - наклон на отсечка
+    slope_ab = (new_coordinates[1][1] - new_coordinates[0][1]) \
+               / (new_coordinates[1][0] - new_coordinates[0][0])
+
+    # tochka na dopirane na wertikala
+    # x = (y3 - y1 + m * x1 - m * x3) / m
+
+    h_da1 = (
+            new_coordinates[2][1]
+            - new_coordinates[0][1]
+            + slope_ab * new_coordinates[0][0]
+            - slope_ab * new_coordinates[2][0])
+
+    # Diagonal
+    h = slope_ab * (h_da1- new_coordinates[2][0])
+    visochina = abs(h) *10
+    figure = "isosceles trapezoid"
+    print(f"{h = }")
+    print(f"{visochina = }")
+    formula_perimeter = abs(ab) + abs(bc) + abs(cd) + abs(da)
+    formula_lice = ((ab + cd) * visochina) / 2
+
+else:
+    formula_perimeter = abs(ab) + abs(bc) + abs(cd) + abs(da)
 
 
 
-
-
-print(f"The figure is a {figure} whit perimeter: {formula_by_type} ")
-
-
+print(f"The figure is a {figure} whit perimeter: {formula_perimeter = :.2f} ")
+print(f"The figure is a {figure} whit circumference: {formula_lice = :.2f} ")
 
 
 
