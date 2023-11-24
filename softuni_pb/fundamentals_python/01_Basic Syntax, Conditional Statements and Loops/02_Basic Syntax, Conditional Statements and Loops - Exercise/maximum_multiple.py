@@ -1,3 +1,13 @@
+div = int(input())
+bound = int(input())
+
+for num in range(bound, div - 1, -1):
+    if num % div == 0:
+        break
+print(num)
+
+""" 2 """
+
 number_divisor = int(input())
 number_boundary = int(input())
 
@@ -8,3 +18,4 @@ for number in range(1, number_boundary + 1):
         target_number = number
 
 print(target_number)
+

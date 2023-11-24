@@ -1,3 +1,5 @@
+""" 1 """
+
 first_text = input()
 second_text = input()
 
@@ -6,13 +8,7 @@ for index in range(len(first_text)):
         first_text = second_text[:index + 1] + first_text[index + 1:]
         print(first_text)
 
-
-
-
-
-
-
-#
+""" 2 """
 #
 # first_text = [n for n in input()]
 # second_text = [n for n in input()]
@@ -27,7 +23,7 @@ for index in range(len(first_text)):
 #         print()
 #
 #
-
+""" 3 """
 
 # first_text = input()
 # second_text = input()
@@ -44,3 +40,4 @@ for index in range(len(first_text)):
 #             print(f"{_}", end="")
 #         print()
 #     i += 1
+
