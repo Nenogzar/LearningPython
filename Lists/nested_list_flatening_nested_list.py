@@ -1,23 +1,8 @@
-while True:
-    input_string = input("Въведете числа, разделени със запетая: ")
-    input_numbers = input_string.split(',')
-
-
-    # обхожда списъка и разделя на двойки вложени списъци
-    pairs = [input_numbers[i:i + 2] for i in range(0, len(input_numbers) - 1, 2)]
-
-    # еко е нечетен брой добавям последния елемент като отделен вложен списък в pairs
-    if len(input_numbers) % 2 == 1:
-        pairs.append([input_numbers[-1]])
-
-    pairs = [[int(num) for num in pair] for pair in pairs]
-    print("Вложени списъци:", pairs)
-                    #извлича всички елементи от вложените списъци в pairs
-                    # и ги обединява в един плосък (едномерен) списък.
-    flat_list = [x for sublist in pairs for x in sublist]
-    print("Обединен списък:", flat_list)
-
-    repeat = input("Repeat? (Y/N)? ")
-    if repeat.upper() == "N":
-        print("Благодаря!")
-        break
+start = int(input("start range: "))
+end = int(input("end range: "))
+step = int(input("steps: "))
+input_string = list(range(start, end+1, step))
+result = list(map(list, zip(*[iter(input_string)]*2)))
+if len(input_string) % 2 != 0:
+    result.append([input_string[-1]])
+print(result)

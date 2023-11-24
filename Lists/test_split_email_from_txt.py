@@ -16,10 +16,10 @@ for match in matches:
     start_index = match.start()
     end_index = match.end()
 
-#     print(f"Email: {email}")
-#     print(f"Start Index: {start_index}")
-#     print(f"End Index: {end_index}")
-#     print()
-#
-# print(*list_with_emails, sep=", ")
+    print(f"Email: {email}")
+    print(f"Start Index: {start_index}")
+    print(f"End Index: {end_index}")
+    print()
+
 print(*list_with_names, sep=", ")
+print(*list_with_emails, sep=', ')
