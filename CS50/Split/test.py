@@ -1,5 +1,5 @@
 #
-# fhand = open("softuni_pb\Lists\split.txt")
+# fhand = open("softuni\Lists\split.txt")
 # for line in fhand:
 #     line = line.rstrip()
 #     if not line.startswith('From ') : continue
@@ -10,7 +10,7 @@
 
 
 
-spisak = open("softuni_pb\Lists\split.txt")
+spisak = open("softuni\Lists\split.txt")
 for line in spisak:
     line = line.rstrip()
     if not line.startswith('From ') : continue

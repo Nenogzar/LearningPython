@@ -24,19 +24,26 @@ list3 = ["apple", "banana", "orange"]
 
 ### whit comprehension
 
-# new_list = [x for x in list3 if "b" in x]
+# new_list = [x for x in list3 if "n" in x]
 # print(new_list)
-
-[new_list.append(n) for n in list3 if n != "apple"]
+""" """
+for n in list3:
+    if n != "apple":
+        new_list.append(n)
+# [new_list.append(n) for n in list3 if n != "apple"]
 print(new_list)
-
-##########################
+""" """
 num_list = []
-[num_list.append(x) for x in range(1, 11)]
+for x in range(1, 11):
+    num_list.append(x)
+# [num_list.append(x) for x in range(1, 11)]
 print(num_list)
 
 list4 = []
-[list4.append(l) for l in num_list if l < 6]
+for l in num_list:
+    if l < 6:
+        list4.append(l)
+# [list4.append(l) for l in num_list if l < 6]
 print(list4)
 
 

@@ -1,28 +1,31 @@
 a = [1, 2, 3]
 b = [4, 5, 6]
 c = a + b
-print("суматана List a",a , "+ list b", b, "=", c)
+print(f"{a} + {b} = {c}")
 print()
 
 t = [9, 41, 12, 3, 74, 15]
-print("списъка е:", t)
+print(f"{t = }")
 # списъка е: [9, 41, 12, 3, 74, 15]
 
-print("от 2ри до 3ти - [1:3] ->", t[1:3])
+print("t[1:3] ->", t[1:3])
 # от 2ри до 3ти - [1:3] -> [41, 12]
 
-print("от начало до 4ти - [:4] ->", t[:4])
+print("t[:4] ->", t[:4])
 # от начало до 4ти - [:4] -> [9, 41, 12, 3]
 
-print("от 3ти до края [3:] ->", t[3:])
+print("t[3:] ->", t[3:])
 # от 3ти до края [3:] -> [3, 74, 15]
 
-print("от начало до край [:] ->", t[:])
+print("t[:] ->", t[:])
 # от начало до край [:] -> [9, 41, 12, 3, 74, 15]
+
+print("t[::-1]", t[::-1])
 
 ####### 3.1.3. Lists¶  https://docs.python.org/3/tutorial/introduction.html#lists ########
 cubes = [1, 8, 27, 65, 125]
-print("cubes -> ", cubes)
+print(f"{cubes = }")
+
 cubes[3] = 64               # За разлика от низовете, които са неизменни, списъците са променлив тип,
                             # т.е. възможно е да се променя тяхното съдържание:
 print("cubes[3] = 64 ->", cubes)
@@ -36,7 +39,7 @@ print("cubes.append(7 ** 3)->", cubes)
 # Присвояването на срезове също е възможно и това може дори да промени размера на списъка или да го изчисти изцяло:
 
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-print(letters)
+print(f"{letters = }")
 # ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 
 letters[2:5] = ['C', 'D', 'E']  # replace some values
@@ -135,7 +138,7 @@ print(friends[1])
 
 friends.sort()
 # output: ["Glenn", 'Joseph', 'Sally']
-
+print(friends)
 print(friends[1])
 # output: Joseph
 
@@ -228,24 +231,3 @@ etc2 = line1.split(';')         # премахва ; и прави отделн�
 print('line2:', etc2)
 # output: ['first', 'second', 'third']
 
-"""" Open file, read and split list """
-"""" Take email and account """""
-
-spisak = open("split.txt")
-for line in spisak:
-    line = line.rstrip()
-    if not line.startswith('From ') : continue
-    words = line.split()
-    # print(words)
-    for index, item in enumerate(words):
-        if "@" in item:
-            # print(f"The first email '{item}' is at index {index}")
-
-            # print(words[index])         # взимам email
-            email = words[index]
-            email_split = email.split("@")
-            account = email_split[0]
-            print(account)
-
-
-""""""
