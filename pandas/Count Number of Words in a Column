@@ -1,0 +1,40 @@
+Most data science professionals use the pandas library for data handling and preparation. The pandas library doesn’t have any method to count the number of words in a piece of text. One way to solve this problem is by finding the length of the text by splitting the complete text.
+
+So let’s import a textual dataset where we can count the number of words in a column:
+
+import pandas as pd
+data = pd.read_csv("https://raw.githubusercontent.com/amankharwal/Website-data/master/articles.csv", encoding = 'latin1')
+print(data.head())
+
+ Article  \
+0  Data analysis is the process of inspecting and...
+1  The performance of a machine learning algorith...
+2  You must have seen the news divided into categ...
+3  When there are only two classes in a classific...
+4  The Multinomial Naive Bayes is one of the vari...
+
+                                               Title
+0                  Best Books to Learn Data Analysis
+1         Assumptions of Machine Learning Algorithms
+2          News Classification with Machine Learning
+3  Multiclass Classification Algorithms in Machin...
+4        Multinomial Naive Bayes in Machine Learning
+
+The dataset has two columns Article and Title. Let’s create a new column as the number of words in the article column:
+
+data["Number of Words"] = data["Article"].apply(lambda n: len(n.split()))
+print(data.head())
+
+ Article  \
+0  Data analysis is the process of inspecting and...
+1  The performance of a machine learning algorith...
+2  You must have seen the news divided into categ...
+3  When there are only two classes in a classific...
+4  The Multinomial Naive Bayes is one of the vari...
+
+                                               Title  Number of Words
+0                  Best Books to Learn Data Analysis               76
+1         Assumptions of Machine Learning Algorithms               56
+2          News Classification with Machine Learning               70
+3  Multiclass Classification Algorithms in Machin...               66
+4        Multinomial Naive Bayes in Machine Learning               96
