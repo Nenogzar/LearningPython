@@ -15,3 +15,8 @@ for animal in check_for_wolf:
     check_for_number -= 1
 
 print(text_to_print)
+
+""" 1 """
+
+# sheeps = list(reversed(input().split(', ')))
+# print('Please go away and stop eating my sheep' if sheeps[0] == 'wolf' else f'Oi! Sheep number {sheeps.index("wolf")}! You are about to be eaten by a wolf!')
