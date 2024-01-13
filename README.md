@@ -1,5 +1,5 @@
 # Python projects
-![](https://github.com/Nenogzar/LearningPython/blob/main/python1.jpg)
+![](F:\Python\Project\LearningPython\python1.jpg)
 
 SoftUni Basic
 
