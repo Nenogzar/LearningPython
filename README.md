@@ -1,5 +1,5 @@
 # Python projects
-![](F:\Python\Project\LearningPython\python1.jpg)
+![](..\LearningPython\python1.jpg)
 
 SoftUni Basic
 
