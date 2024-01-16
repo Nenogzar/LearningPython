@@ -1,18 +1,36 @@
-num = float(input())
+""" 1 """
+# float_number = float(input())
+# if float_number == 0:
+#     print("zero")
 
-if num == 0:
+# if float_number > 0:
+#     if float_number < 1:
+#         print('small positive')
+#     elif float_number > 1000000:
+#         print('larg positive')
+#     else:
+#         print('positive')
+
+# if float_number < 0:
+#     if abs(float_number) < 1:
+#         print('small negative')
+#     elif abs(float_number) > 1000000:
+#         print('larg negative')
+#     else:
+#         print('negative')
+
+""" 2 """
+float_number = float(input())
+
+if float_number == 0:
     print('zero')
-elif num > 0:
-    if num < 1:
-        print('small positive')
-    elif num > 1000000:
-        print('large positive')
-    else:
-        print('positive')
+elif 0 < float_number < 1:
+    print('small positive')
+elif 1 <= float_number <= 1000000:
+    print('positive')
+elif -1 >= float_number >= -1000000:
+    print('negative')
+elif float_number < 0:
+    print('small negative')
 else:
-    if abs(num) < 1:
-        print('small negative')
-    elif abs(num) > 1000000:
-        print('large negative')
-    else:
-        print('negative')
+    print('large negative')
