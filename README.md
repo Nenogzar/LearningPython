@@ -7,10 +7,7 @@
 [SoftUni Fundamentals](https://github.com/Nenogzar/LearningPython/tree/main/softuni/fundamentals_python) 
 
 
-
-
 # Other
-[YouTube Downloader converter](https://github.com/Nenogzar/LearningPython/tree/main/Other/youtube-downloader-converter)
 
 [Python Books](https://github.com/Nenogzar/LearningPython/tree/main/Book)
     
@@ -22,11 +19,14 @@
 
 [Function](https://github.com/Nenogzar/LearningPython/tree/main/Function)
 
+* [Slice](https://github.com/Nenogzar/LearningPython/tree/main/slice)
+* [Time](https://github.com/Nenogzar/LearningPython/tree/main/time)
+
 [Notepad](https://github.com/Nenogzar/LearningPython/tree/main/notepad)
 
 [Games](https://github.com/Nenogzar/LearningPython/tree/main/Other/Games)
 
 [QRCode](https://github.com/Nenogzar/LearningPython/tree/main/Other/QRCode)
 
-Time
+[YouTube Downloader converter](https://github.com/Nenogzar/LearningPython/tree/main/Other/youtube-downloader-converter)
 
