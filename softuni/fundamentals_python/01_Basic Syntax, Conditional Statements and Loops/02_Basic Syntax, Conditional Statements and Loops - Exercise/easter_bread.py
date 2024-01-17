@@ -15,8 +15,12 @@ for number_breads in range(1, int(budget) + 1):
             f"You made {number_breads - 1} loaves of Easter bread! Now you have {colored_eggs} eggs and {budget:.2f}BGN left.")
         break
 
-
-
+#
+"""
+100
+5
+You made 9 loaves of Easter bread! Now you have 15 eggs and 7.19BGN left.
+"""
 
 # budget = float(input())
 # flour_price = float(input())
@@ -27,7 +31,7 @@ for number_breads in range(1, int(budget) + 1):
 # colored_eggs = 0
 # bread_loaves = 0
 #
-# while True:
+# while budget <= loaf_price:
 #
 #     if budget <= loaf_price:
 #         print(f"You made {bread_loaves} loaves of Easter bread! Now you have {colored_eggs} eggs and {budget:.2f}BGN left.")
@@ -39,3 +43,6 @@ for number_breads in range(1, int(budget) + 1):
 #
 #     if bread_loaves % 3 == 0:
 #         colored_eggs -= bread_loaves - 2
+
+
+
