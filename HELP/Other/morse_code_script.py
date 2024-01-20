@@ -1,5 +1,5 @@
-
-    symbols = {
+data = ""
+symbols = {
         "a": "·-", "b": "-···", "c": "-·-·", "d": "-··", "e": "·", "f": "··-·", "g": "--·", "h": "····", "i": "··",
         "j": "·---", "k": "-·-", "l": "·-··", "m": "--", "n": "-·", "o": "---", "p": "·--·", "q": "--·-", "r": "·-·",
         "s": "···", "t": "-", "u": "··-", "v": "···-", "w": "·--", "x": "-··-", "y": "-·--", "z": "--··",
@@ -11,20 +11,20 @@
         "$": "···-··-", "@": "·--·-·", " ": "."
     }
 
-    data = input("Enter text: ").lower()
+data = input("Enter text: ").lower()
 
 
-    length = len(data)
+length = len(data)
 
-    output = [symbols.get(data[i]) for i in range(length) if data[i] in symbols.keys()]
+output = [symbols.get(data[i]) for i in range(length) if data[i] in symbols.keys()]
 
-    print(' '.join(output))
+print(' '.join(output))
 
 
 
 
     #
-    MORSE_CODE_DICT = {
+MORSE_CODE_DICT = {
         "·-": "a", "-···": "b", "-·-·": "c", "-··": "d", "·": "e", "··-·": "f", "--·": "g", "····": "h",
         "··": "i", "·---": "j", "-·-": "k", "·-··": "l", "--": "m", "-·": "n", "---": "o", "·--·": "p",
         "--·-": "q", "·-·": "r", "···": "s", "-": "t", "··-": "u", "···-": "v", "·--": "w", "-··-": "x",
@@ -37,22 +37,22 @@
 
     }
 
-    def morse_to_text(morse):
+def morse_to_text(morse):
 
-        text = ""
-        symbols = morse.split()
+    text = ""
+    symbols = morse.split()
 
-        for symbol in symbols:
-            if symbol in MORSE_CODE_DICT:
-                text += MORSE_CODE_DICT[symbol]
-            else:
-                print("Невалиден символ на Морз: " + symbol)
-                return
-        return text
+    for symbol in symbols:
+        if symbol in MORSE_CODE_DICT:
+            text += MORSE_CODE_DICT[symbol]
+        else:
+            print("Невалиден символ на Морз: " + symbol)
+            return
+    return text
 
-    morse = input("Въведете текст на Морз, който искате да преведете: ")
+morse = input("Въведете текст на Морз, който искате да преведете: ")
 
-    text = morse_to_text(morse)
+text = morse_to_text(morse)
 
-    if text:
-        print("Преведеният текст е: " + text)
+if text:
+    print("Преведеният текст е: " + text)

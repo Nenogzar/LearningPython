@@ -1,60 +1,23 @@
+import random
 
-# symbols = {
-#     "a": "·-", "b": "-···", "c": "-·-·", "d": "-··", "e": "·", "f": "··-·", "g": "--·", "h": "····", "i": "··",
-#     "j": "·---", "k": "-·-", "l": "·-··", "m": "--", "n": "-·", "o": "---", "p": "·--·", "q": "--·-", "r": "·-·",
-#     "s": "···", "t": "-", "u": "··-", "v": "···-", "w": "·--", "x": "-··-", "y": "-·--", "z": "--··",
-#     "0": "-----", "1": "·----", "2": "··---", "3": "···--", "4": "····-",
-#     "5": "·····", "6": "-····", "7": "--···", "8": "---··", "9": "----·",
-#     ".": "·-·-·-", ",": "--··--", "?": "··--··", "": "·----·", "!": "-·-·--",
-#     "/": "-··-·", "(": "-·--·", ")": "-·--·-", "§": "· ···", ":": "---···",
-#     ";": "-·-·-·", "[": "-···-", "..": "-··-·", "-": "-····-", "_": "··-- ·-",
-#     "$": "···-··-", "@": "·--·-·", " ": "."
-# }
-#
-# # Taking input from a user
-# data = input("Enter text: ").lower()
-#
-#
-# length = len(data)
-#
-# # Convert to Morse code in list comprehension
-# output = [symbols.get(data[i]) for i in range(length) if data[i] in symbols.keys()]
-#
-# print(' '.join(output))
-#
+positive_even_number = random.randrange(2, 101, 2)
+negative_even_number = random.randrange(-100, -1, 2)
+
+positive_odd_number = random.randrange(1, 100, 2)
+negative_odd_number = random.randrange(-101, 0, 2)
+print("We now have some random numbers available for future exercises.")
+print("The random positive even number is", positive_even_number)
+print("The random positive odd nubmer is", positive_odd_number)
+print("The random negative even number", negative_even_number)
+print("The random negative odd number", negative_odd_number)
 
 
 
-#
-MORSE_CODE_DICT = {
-    "·-": "a", "-···": "b", "-·-·": "c", "-··": "d", "·": "e", "··-·": "f", "--·": "g", "····": "h",
-    "··": "i", "·---": "j", "-·-": "k", "·-··": "l", "--": "m", "-·": "n", "---": "o", "·--·": "p",
-    "--·-": "q", "·-·": "r", "···": "s", "-": "t", "··-": "u", "···-": "v", "·--": "w", "-··-": "x",
-    "-·--": "y", "--··": "z", "-----": "0", "·----": "1", "··---": "2", "···--": "3", "····-": "4",
-    "·····": "5", "-····": "6", "--···": "7", "---··": "8", "----·": "9", "·-·-·-": ".", "--··--": ",",
-    "··--··": "?", "·----·": "", "-·-·--": "!", "-··-·": "/", "-·--·": "(", "-·--·-": ")", "· ···": "§",
-    "---···": ":", "-·-·-·": ";", "-···-": "[", "-··-·": "..", "-····-": "-", "··-- ·-": "_",
-    "···-··-": "$", "·--·-·": "@", ".": " ",
+negativ_even = ""
+for n in range(-100, -1, 2):
+    negativ_even += str(n) + ", "
 
+# Remove the trailing ", " from the string
+negativ_even = negativ_even.rstrip(", ")
 
-}
-
-def morse_to_text(morse):
-
-    text = ""
-    symbols = morse.split()
-
-    for symbol in symbols:
-        if symbol in MORSE_CODE_DICT:
-            text += MORSE_CODE_DICT[symbol]
-        else:
-            print("Невалиден символ на Морз: " + symbol)
-            return
-    return text
-
-morse = input("Въведете текст на Морз, който искате да преведете: ")
-
-text = morse_to_text(morse)
-
-if text:
-    print("Преведеният текст е: " + text)
+print(negativ_even)
