@@ -23,8 +23,10 @@ Write a program that reads a floating-point number and:
         else:
             print("negative")
 
+
 2.	Largest of Three Numbers
 Write a program that receives three whole numbers and prints the largest one.
+
 
     num_list = []
     for _ in range(3):
@@ -32,16 +34,20 @@ Write a program that receives three whole numbers and prints the largest one.
         max_num=max(num_list)
     print(max_num)
 
+
 3.	Word Reverse
 Write a program that receives a single word, reverses it, and prints it.
 
+
     reversed_word = ''.join(reversed(input()))
     print(reversed_word)
+
 
 4.	Even Numbers
 Write a program that receives a number n on the first line. On the following n lines, 
 it receives different integer numbers. If the program receives an odd number, 
 print "{num} is odd!" and end the program. Otherwise, if all numbers given are even, print "All numbers are even.".
+
 
     number = int(input())
     
@@ -53,10 +59,12 @@ print "{num} is odd!" and end the program. Otherwise, if all numbers given are e
     else:
         print("All numbers are even.")
 
+
 5.	Number Between 1 and 100
 Write a program that reads different floating-point numbers from the console. 
 When it receives a number between 1 and 100 inclusive, the program should stop reading and 
 should print "The number {number} is between 1 and 100".
+
 
     while True:
         number = float(input())
@@ -65,14 +73,15 @@ should print "The number {number} is between 1 and 100".
     
     print(f"The number {number} is between 1 and 100")
 
+
 or
+
 
     for number in iter(lambda: float(input()), None):
         if 1 <= number <= 100:
             break
     
     print(f"The number {number} is between 1 and 100")
-
 
 
 6.	Shopping
@@ -82,6 +91,7 @@ you should buy until it receives the command "End".
 During the iterations, if there is not enough budget left to buy the next product, 
 it prints "You went in overdraft!" and end the program.
 Otherwise, if you accomplished to buy all products before receiving "End", it prints "You bought everything needed."
+
 
     budget = int(input())
     command = input()
@@ -97,8 +107,10 @@ Otherwise, if you accomplished to buy all products before receiving "End", it pr
     else:
         print("You bought everything needed.")
 
+
 7.	Patterns
 Write a program that receives a number and creates the following pattern. The number represents the largest count of stars on one row.
+
 
     n = int(input())
     
