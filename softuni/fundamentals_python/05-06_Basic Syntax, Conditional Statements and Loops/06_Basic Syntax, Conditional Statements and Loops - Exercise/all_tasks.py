@@ -34,6 +34,7 @@ Note: All the values are inclusive except the last one!
 #     drinks = "beer"
 # else:
 #     drinks = "whisky"
+#
 # print(f"drink {drinks}")
 
 """
@@ -46,7 +47,72 @@ For each number, the program should print a different message:
 •	If the number is 86 - "How are you?"
 •	If the number is not 88 nor 86, and it is below 88 - "GREAT!"
 •	If the number is over 88 - "Bye."
+"""
+# message_number = int(input())
+# message = ""
+# for _ in range(message_number):
+#     code = int(input())
+#
+#     if code == 88:
+#         message = "Hello"
+#     elif code == 86:
+#         message = "How are you?"
+#     elif code < 88:
+#         message = "GREAT!"
+#     else:
+#         message = "Bye."
+#     print(message)
+"""
+4.	Maximum Multiple
+On the first line, you will be given a positive number, which will serve as a divisor. 
+On the second line, you will receive a positive number that will be the boundary. 
+You should find the largest integer N, that is:
+•	divisible by the given divisor
+•	less than or equal to the given bound
+•	greater than 0
+Note: it is guaranteed that N is found.
+"""
+# divisor = int(input())
+# boundary = int(input())
+#
+# result = (boundary // divisor) * divisor
+# print(result)
+"""
+5.	Orders
+You work at a coffee shop, and your job is to place orders with the distributors. 
+Thus, you want to know the price of each order. 
+
+On the first line, you will receive integer N - the number of orders the shop will receive. 
+For each order, you will receive the following information:
+•	Price per capsule - a floating-point number in the range [0.01…100.00]
+•	Days - integer in the range [1…31]
+•	Capsules, needed per day - integer in the range [1…2000]
+For each order, you should print a single line in the following format:
+•	"The price for the coffee is: ${price}"
+If you do not receive a correct order (one or more of the values are not in the given range), 
+you should ignore it and move to the next one.
+After you go through all orders, you need to print the total price in the following format:
+•	 "Total: ${total_price}"
+Both the price of a coffee and the total price must be formatted to the second decimal place. 
 
 """
 
+total_price = 0
 
+n = int(input())
+
+for _ in range(n):
+    price_per_capsule = float(input())
+    days = int(input())
+    capsules_per_day = int(input())
+
+    # Validate the input ranges
+    if not (0.01 <= price_per_capsule <= 100.00) or not (1 <= days <= 31) or not (1 <= capsules_per_day <= 2000):
+
+        continue
+
+    order_price = price_per_capsule * days * capsules_per_day
+    total_price += order_price
+    print(f"The price for the coffee is: ${order_price:.2f}")
+
+print(f"Total: ${total_price:.2f}")

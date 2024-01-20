@@ -19,3 +19,9 @@ for number in range(1, number_boundary + 1):
 
 print(target_number)
 
+""" 3 """
+divisor = int(input())
+boundary = int(input())
+
+result = (boundary // divisor) * divisor
+print(result)
