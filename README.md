@@ -1,7 +1,6 @@
-# Python projects
+# Python help codes
 
-|  [![SoftUni Basic](https://about.softuni.bg/Content/images/home-page/software-university-logo.svg)](https://github.com/Nenogzar/LearningPython/tree/main/softuni/basics_programming)Basic Oct.2023| [![SoftUni Fundamentals](https://about.softuni.bg/Content/images/home-page/foundation-logo.svg)](https://github.com/Nenogzar/LearningPython/tree/main/softuni/fundamentals_python) January 2024  |   |
-|---|---|---|
+
 
 
 <br/><br/>
