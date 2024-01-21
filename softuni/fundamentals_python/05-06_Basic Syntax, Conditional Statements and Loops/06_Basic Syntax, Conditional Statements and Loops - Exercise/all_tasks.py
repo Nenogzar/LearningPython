@@ -97,22 +97,69 @@ Both the price of a coffee and the total price must be formatted to the second d
 
 """
 
-total_price = 0
+# total_price = 0
+#
+# n = int(input())
+#
+# for _ in range(n):
+#     price_per_capsule = float(input())
+#     days = int(input())
+#     capsules_per_day = int(input())
+#
+#     # Validate the input ranges
+#     if not (0.01 <= price_per_capsule <= 100.00) or not (1 <= days <= 31) or not (1 <= capsules_per_day <= 2000):
+#
+#         continue
+#
+#     order_price = price_per_capsule * days * capsules_per_day
+#     total_price += order_price
+#     print(f"The price for the coffee is: ${order_price:.2f}")
+#
+# print(f"Total: ${total_price:.2f}")
 
-n = int(input())
+"""
+6.	String Pureness
+You will be given the number n. After that, you'll receive different strings n times. 
+Your task is to check if the given strings are pure, 
+meaning that they do NOT consist of any of the characters: comma ",", period ".", or underscore "_":
+•	If a string is pure, print "{string} is pure."
+•	Otherwise, print "{string} is not pure!"
+"""
+# string_number = int(input())
+# special_chars = [',', '.', '_']
+# contains_comma = False
+# contains_dot = False
+# contains_underscore = False
+#
+# for _ in range(string_number):
+#     my_string = input()
+#
+#
+#     for char in special_chars:
+#         if char in my_string:
+#             if char == ',':
+#                 contains_comma = True
+#             elif char == '.':
+#                 contains_dot = True
+#             elif char == '_':
+#                 contains_underscore = True
+#
+#     if contains_comma or contains_dot or contains_underscore:
+#         print(f"{my_string} is not pure!")
+#     else:
+#         print(f"{my_string} is pure.")
 
-for _ in range(n):
-    price_per_capsule = float(input())
-    days = int(input())
-    capsules_per_day = int(input())
+""" or """
 
-    # Validate the input ranges
-    if not (0.01 <= price_per_capsule <= 100.00) or not (1 <= days <= 31) or not (1 <= capsules_per_day <= 2000):
+num_strings = int(input())
 
-        continue
+for n in range(num_strings):
+    my_string = input()
 
-    order_price = price_per_capsule * days * capsules_per_day
-    total_price += order_price
-    print(f"The price for the coffee is: ${order_price:.2f}")
+    contains_special_chars = any(char in my_string for char in [',', '.', '_'])
 
-print(f"Total: ${total_price:.2f}")
+    if contains_special_chars:
+        print(f"{my_string} is not pure.")
+    else:
+        print(f"{my_string} is pure.")
+
