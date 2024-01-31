@@ -13,8 +13,7 @@ print(f"{answer = }")
 #         return 1
 #
 # # (lambda f, x: x * f(f, x - 1) if x > 0 else 1)
-# def factorial (x):
-#     return f (f, x)
+# def factorial (x):#     return f (f, x)
 
 
 
