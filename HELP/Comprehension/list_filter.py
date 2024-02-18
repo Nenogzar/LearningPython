@@ -12,10 +12,10 @@
 numbers = [int(input(f"-{i+1}- ")) for i in range(int(input("range: ")))]
 command = input("odd / even / positive / negative :")
 
-print([x for x in numbers if any([command == "odd" and x % 2 != 0,
-                                  command == "even" and x % 2 ==0,
-                                  command == "positive" and x >= 0,
-                                  command == "negative" and x < 0])])
+# print([x for x in numbers if any([command == "odd" and x % 2 != 0,
+#                                   command == "even" and x % 2 ==0,
+#                                   command == "positive" and x >= 0,
+#                                   command == "negative" and x < 0])])
 
 
 result = [x for x in numbers if any([command == "odd" and x % 2 != 0,
@@ -23,4 +23,5 @@ result = [x for x in numbers if any([command == "odd" and x % 2 != 0,
                                      command == "positive" and x >= 0,
                                      command == "negative" and x < 0])]
 
-print(f" {command} in list {numbers} is {result}")
+print(f"{command} in list {numbers} is {result}")
+print(f"in list {numbers} have a {len(result)} {command} elements: {result}")
