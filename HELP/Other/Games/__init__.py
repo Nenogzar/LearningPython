@@ -2,7 +2,7 @@ while True:
 
     # code
 
-    repeat = input("Искате ли да повторите (Y/N)? ")
+    repeat = input("Repeat? (Y/N)? ")
     if repeat.upper() == "N":
-        print("Благодаря!")
+        print("Bay!")
         break
