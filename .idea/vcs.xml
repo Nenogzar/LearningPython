@@ -4,6 +4,7 @@
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../Academy_SoftUni/Academy_SoftUni" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/HELP/Games/Deal_or_Not_Deal-Console-game" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Password-generator" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../TinWoodman" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../Softuni_MySQL" vcs="Git" />
   </component>

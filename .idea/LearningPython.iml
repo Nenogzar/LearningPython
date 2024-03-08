@@ -7,6 +7,7 @@
     <orderEntry type="module" module-name="Academy_SoftUni" />
     <orderEntry type="module" module-name="Softuni_MySQL" />
     <orderEntry type="module" module-name="TinWoodman" />
+    <orderEntry type="module" module-name="Password-generator" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="GOOGLE" />
