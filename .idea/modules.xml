@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../Academy_SoftUni/Academy_SoftUni/.idea/Academy_SoftUni.iml" filepath="$PROJECT_DIR$/../../Academy_SoftUni/Academy_SoftUni/.idea/Academy_SoftUni.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/LearningPython.iml" filepath="$PROJECT_DIR$/.idea/LearningPython.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Password-generator/.idea/Password-generator.iml" filepath="$PROJECT_DIR$/../Password-generator/.idea/Password-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Softuni_MySQL/.idea/Softuni_MySQL.iml" filepath="$PROJECT_DIR$/../../Softuni_MySQL/.idea/Softuni_MySQL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TinWoodman/.idea/TinWoodman.iml" filepath="$PROJECT_DIR$/../TinWoodman/.idea/TinWoodman.iml" />
+    </modules>
+  </component>
+</project>
