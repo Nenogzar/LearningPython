@@ -16,3 +16,19 @@ print("(255,255,0):",color[(255,255,0)])
 print("(0,255,0):",color.get((0,255,0)))
 print("(0,0,255):",color.get((0,0,255),"Бял"))
 print("(255,255,255):",color.get((255,255,255),"Бял"))
+
+#  Обръщане на ключа в стойност и стойността в ключ
+colors = {}
+for key, value in color.items():
+    if key not in colors:
+        colors[value]= key
+print(colors)
+
+cviat = input("Червен, Жълт, Зелен, Син, Бял: ")
+
+if cviat not in colors.keys():
+    colors[cviat] = input(" данни на цвета")
+print(colors)
+print(colors[cviat])
+
+
