@@ -1,5 +1,7 @@
 # Първи речник:
 nums={100:"стотица",1:"единица",10:"десетка"}
+for key, value in nums.items():
+    print(f"{key}: {value}")
 # Съдържание на речника:
 print(nums)
 print("1:  ",nums[1])

@@ -26,9 +26,9 @@ def get_nums(n,state):
         L=list(2*k+1 for k in range(n))
     return L
 # Извикване на функцията:
-print(get_nums(10,True))
-print(get_nums(8,False))
-print(get_nums(12.5,True))
+print(f"{get_nums(10,True) = }")
+print(f"{get_nums(8,False) = }")
+print(f"{get_nums(12.5,True) = }")
 # Функция за създаване на множество от случайни букви:
 def get_symbs(n):
     if n>10 or n<1:
